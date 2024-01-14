@@ -2,7 +2,7 @@
 
 ### Ownership là gì ? 
 
- "Ownership" trong Rust, một chủ đề rất hay và quan trọng! Hãy tưởng tượng bạn có một chiếc bánh pizza. Trong Rust, "Ownership" giống như quy tắc xác định ai có quyền ăn miếng pizza đó. Đây là một cách Rust giữ cho bộ nhớ của chương trình được sắp xếp gọn gàng và an toàn - giống như cách bạn không muốn ai khác cắn vào miếng pizza của mình 😁!
+ "Ownership" trong Rust, một chủ đề rất hay và quan trọng! Hãy tưởng tượng bạn có một chiếc bánh pizza. Trong Rust, "Ownership" giống như quy tắc xác định ai có quyền ăn miếng pizza đó. Đây là một cách Rust giữ cho bộ nhớ của programs được sắp xếp gọn gàng và an toàn - giống như cách bạn không muốn ai khác cắn vào miếng pizza của mình 😁!
 
 Các features:
  + *   **Mỗi mảnh bộ nhớ có một chủ nhân**: Trong Rust, mỗi mảnh bộ nhớ được cấp phát (chẳng hạn như một biến) đều có một "owner" (chủ nhân). Điều này giúp Rust biết khi nào cần giải phóng bộ nhớ đó.
@@ -11,13 +11,13 @@ Các features:
 
 ### Một số ưu điểm:
 
-- *   **An toàn và tiết kiệm cho bộ nhớ 🛡️**: giúp ngăn chặn lỗi rò rỉ bộ nhớ và đảm bảo rằng bộ nhớ không bị truy cập trái phép. Bằng cách quản lý bộ nhớ hiệu quả, "Ownership" giúp giảm bớt việc sử dụng tài nguyên không cần thiết. Điều này rất quan trọng đối với các ứng dụng yêu cầu hiệu năng cao hoặc chạy trên phần cứng có hạn chế. Nó giống như việc bạn sử dụng mỗi miếng pizza một cách triệt để, không để thừa mảnh nào..
+- *   **An toàn và tiết kiệm cho bộ nhớ 🛡️**: giúp ngăn chặn lỗi rò rỉ bộ nhớ và đảm bảo rằng bộ nhớ không bị truy cập trái phép. Bằng cách quản lý bộ nhớ hiệu quả, "Ownership" giúp giảm bớt việc sử dụng tài nguyên không cần thiết. Điều này rất quan trọng đối với các ứng dụng yêu cầu hiệu năng cao hoặc chạy trên phần cứng có hạn chế. Nó giống như việc bạn sử dụng mỗi miếng pizza một cách triệt để.
 
 - *   **Tránh concurrency errors 😷**: Khi nhiều tiến trình cố gắng truy cập vào cùng một dữ liệu, "Ownership" giống như một quản lý hàng đợi thông minh. Nó giúp ngăn chặn lỗi liên quan đến sự đồng thời, đảm bảo mỗi tiến trình lần lượt "ăn" mà không "đụng hàng".
 
 - *   **Tối ưu hiệu năng (Không cần garbage collector) 🚀**: giúp chạy nhanh hơn, giống như là bạn chạy marathon mà không cần mang theo một cái ba lô nặng nề. "Ownership" giúp quản lý bộ nhớ một cách hiệu quả, làm tăng hiệu năng tổng thể của những đoạn code.
 
-- *   **Dễ dàng handle predict behavior 🧐**: khi bạn biết rõ ai là chủ nhân của từng mảnh bộ nhớ, việc dự đoán và hiểu hành vi của "chương trình" trở nên dễ dàng hơn. Nó giống như việc biết rõ ai sẽ ăn miếng pizza cuối cùng trước khi hộp pizza mở.
+- *   **Dễ dàng handle predict behavior 🧐**: khi bạn biết rõ ai là chủ nhân của từng mảnh bộ nhớ, việc dự đoán và hiểu hành vi của "programs" trở nên dễ dàng hơn. Nó giống như việc biết rõ ai sẽ ăn miếng pizza cuối cùng trước khi hộp pizza mở.
 
 ### Ví dụ ownership: 
 
