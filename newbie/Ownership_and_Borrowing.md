@@ -53,16 +53,13 @@
  "Borrowing" trong Rust là một khái niệm quan trọng khác, liên quan chặt chẽ với "Ownership". Hãy tưởng tượng bạn có một cuốn sách hay và bạn muốn cho bạn bè mượn để đọc, nhưng vẫn đảm bảo cuốn sách đó cuối cùng sẽ quay trở lại của tay bạn. Đó chính là ý tưởng cơ bản của "Borrowing" trong Rust.
 
 #### Giải Thích "Borrowing:
-***Mượn tạm thời**: Khi bạn "mượn" một giá trị trong Rust, bạn tạm thời truy cập vào nó mà không lấy đi quyền sở hữu. Điều này được thực hiện thông qua tham chiếu.
+**Mượn tạm thời**: Khi bạn "mượn" một giá trị trong Rust, bạn tạm thời truy cập vào nó mà không lấy đi quyền sở hữu. Điều này được thực hiện thông qua tham chiếu.
  
-***Tham chiếu không đổi và tham chiếu đổi**: Có hai loại "borring" trong Rust:
+**Tham chiếu không đổi và tham chiếu đổi**: Có hai loại "borring" trong Rust:
+    + Tham chiếu không đổi Immutable (&): Cho phép bạn đọc dữ liệu mà không thay đổi nó. Bạn có thể có nhiều tham chiếu không đổi tới cùng một dữ liệu cùng một lúc. 
 
-    + Tham chiếu không đổi "Immutable" (&): Cho phép bạn đọc dữ liệu mà không thay đổi nó. Bạn có thể có nhiều tham chiếu không đổi tới cùng một dữ liệu cùng một lúc.
-
-
-    + Tham chiếu đổi "Mutable" (&mut): Cho phép bạn thay đổi dữ liệu. Chỉ có thể có một tham chiếu đổi tới một dữ liệu tại một thời điểm.
-
-***Quy tắc an toàn**: Rust đảm bảo rằng không bao giờ có tham chiếu đổi khi có tham chiếu không đổi khác đang tồn tại. Điều này ngăn chặn dữ liệu bị thay đổi khi đang được đọc, giúp tránh các lỗi liên quan đến sự đồng thời.
+    + Tham chiếu đổi Mutable (&mut): Cho phép bạn thay đổi dữ liệu. Chỉ có thể có một tham chiếu đổi tới một dữ liệu tại một thời điểm.
+**Quy tắc an toàn**: Rust đảm bảo rằng không bao giờ có tham chiếu đổi khi có tham chiếu không đổi khác đang tồn tại. Điều này ngăn chặn dữ liệu bị thay đổi khi đang được đọc, giúp tránh các lỗi liên quan đến sự đồng thời.
 
 #### Ví Dụ về "Borrowing":
 
