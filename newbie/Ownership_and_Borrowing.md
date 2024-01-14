@@ -4,7 +4,7 @@
 
  "Ownership" trong Rust, một chủ đề rất hay và quan trọng! Hãy tưởng tượng bạn có một chiếc bánh pizza. Trong Rust, "Ownership" giống như quy tắc xác định ai có quyền ăn miếng pizza đó. Đây là một cách Rust giữ cho bộ nhớ của programs được sắp xếp gọn gàng và an toàn - giống như cách bạn không muốn ai khác cắn vào miếng pizza của mình 😁!
 
-Các features:
+##### Các features:
  + *   **Mỗi mảnh bộ nhớ có một chủ nhân**: Trong Rust, mỗi mảnh bộ nhớ được cấp phát (chẳng hạn như một biến) đều có một "owner" (chủ nhân). Điều này giúp Rust biết khi nào cần giải phóng bộ nhớ đó.
  + *   **Chỉ có một chủ nhân tại một thời điểm**: Giống như việc chỉ có một người có thể cầm miếng pizza (không ai muốn một miếng pizza bị cắn chung đúng không 😔?), một mảnh bộ nhớ trong Rust chỉ có thể có một owner tại một thời điểm.
  + *   **Khi chủ nhân ra đi, bộ nhớ được dọn dẹp**: Khi một owner (chẳng hạn như một biến) ra khỏi phạm vi hoạt động (hãy tưởng tượng họ đi khỏi bàn ăn), Rust tự động giải phóng bộ nhớ mà owner đó quản lý. Đây là cách Rust giải phóng bộ nhớ mà không cần đến garbage collector (trình dọn rác).
