@@ -21,7 +21,7 @@ Các features:
 
 ### Ví dụ ownership: 
 
-###### Ví dụ đơn giản này minh họa cách ownership giúp quản lý bộ nhớ:
+###### Ví dụ đơn giản minh họa cách ownership giúp quản lý bộ nhớ:
 
 ```rust
     fn main() {
